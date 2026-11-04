@@ -31,3 +31,4 @@ else:
     print('\nescolha inválida... Apenas membros da PLEBE não sabem ler!')
     stats_player = {'strength': 1, 'charisma': 1, 'dexterity': 1}
     print(f'Parabéns! Tornaste-te num PLEBEU!!!\nos teus stats são {stats_player}')
+
