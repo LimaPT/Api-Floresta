@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="EJPYcgr9-3SiPmM8EPM-">
+    <mxGraphModel dx="2808" dy="2119" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#004C99)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Gladiador" vertex="1">
+          <mxGeometry height="60" width="120" x="-602" y="-589" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Gatuno" vertex="1">
+          <mxGeometry height="60" width="120" x="295" y="-580" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Goliardo" vertex="1">
+          <mxGeometry height="60" width="120" x="1192" y="-570" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Plebeu" vertex="1">
+          <mxGeometry height="60" width="120" x="2089" y="-561" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-24" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-25" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-26" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="sJawAF0q9Xi60RNU2S6M-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(oklab(0.683701 -0.10856 0.0562662), #ffffff);" value="&lt;pre style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; text-align: start; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;A floresta divide-se em três caminhos...&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="382" x="-733" y="-482" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-95" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-94" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sombra" vertex="1">
+          <mxGeometry height="60" width="120" x="-602" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ruína" vertex="1">
+          <mxGeometry height="60" width="120" x="-375" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-30" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-27" value="">
+          <mxGeometry relative="1" x="0.0937" as="geometry">
+            <Array as="points">
+              <mxPoint x="-734.7" y="-435" />
+              <mxPoint x="-637.5" y="-435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-89" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-88" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Gruta" vertex="1">
+          <mxGeometry height="60" width="120" x="-791" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-56" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-60" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-57" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-60" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-58" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="sJawAF0q9Xi60RNU2S6M-61" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(oklab(0.683701 -0.10856 0.0562662), #ffffff);" value="&lt;pre style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; text-align: start; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;A floresta divide-se em três caminhos...&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="382" x="145" y="-491" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sombra" vertex="1">
+          <mxGeometry height="60" width="120" x="276" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ruína" vertex="1">
+          <mxGeometry height="60" width="120" x="503" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-62" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-59" value="">
+          <mxGeometry relative="1" x="0.0974" as="geometry">
+            <Array as="points">
+              <mxPoint x="143.3" y="-435" />
+              <mxPoint x="240.5" y="-435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-93" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-92" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Gruta" vertex="1">
+          <mxGeometry height="60" width="120" x="87" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-64" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-68" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-65" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-68" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-66" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.75;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-69" value="">
+          <mxGeometry relative="1" x="-0.0025" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-67" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(oklab(0.683701 -0.10856 0.0562662), #ffffff);" value="&lt;pre style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; text-align: start; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;A floresta divide-se em três caminhos...&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="382" x="1042" y="-482" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sombra" vertex="1">
+          <mxGeometry height="60" width="120" x="1173" y="-387" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-91" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-90" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ruína" vertex="1">
+          <mxGeometry height="60" width="120" x="1400" y="-387" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-70" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-67" value="">
+          <mxGeometry relative="1" x="0.0937" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040.3" y="-426" />
+              <mxPoint x="1137.5" y="-426" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Gruta" vertex="1">
+          <mxGeometry height="60" width="120" x="984" y="-387" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-80" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-84" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-81" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-84" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-82" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="sJawAF0q9Xi60RNU2S6M-85" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-83" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(oklab(0.683701 -0.10856 0.0562662), #ffffff);" value="&lt;pre style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; text-align: start; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;A floresta divide-se em três caminhos...&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="382" x="1939" y="-470" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sombra" vertex="1">
+          <mxGeometry height="60" width="120" x="2070" y="-375" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ruína" vertex="1">
+          <mxGeometry height="60" width="120" x="2297" y="-375" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-86" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-83" value="">
+          <mxGeometry relative="1" x="0.0937" as="geometry">
+            <Array as="points">
+              <mxPoint x="1937.3000000000002" y="-414" />
+              <mxPoint x="2034.5" y="-414" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-87" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Gruta" vertex="1">
+          <mxGeometry height="60" width="120" x="1881" y="-375" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-88" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="-791" y="-256" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-90" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Não Vibou" vertex="1">
+          <mxGeometry height="60" width="120" x="1600" y="-387" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-92" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Não consegue mover a pedra" vertex="1">
+          <mxGeometry height="60" width="120" x="-113" y="-396" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-94" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Tem medo do vazio" vertex="1">
+          <mxGeometry height="60" width="120" x="-602" y="-256" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
