@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="EJPYcgr9-3SiPmM8EPM-">
-    <mxGraphModel dx="2808" dy="2119" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#004C99)" math="0" shadow="0">
+    <mxGraphModel dx="1603" dy="1301" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#004C99)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,7 +14,7 @@
           <mxGeometry height="60" width="120" x="1192" y="-570" as="geometry" />
         </mxCell>
         <mxCell id="sJawAF0q9Xi60RNU2S6M-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Plebeu" vertex="1">
-          <mxGeometry height="60" width="120" x="2089" y="-561" as="geometry" />
+          <mxGeometry height="60" width="120" x="2108" y="-561" as="geometry" />
         </mxCell>
         <mxCell id="sJawAF0q9Xi60RNU2S6M-24" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="sJawAF0q9Xi60RNU2S6M-28" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -122,27 +122,33 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sJawAF0q9Xi60RNU2S6M-82" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="sJawAF0q9Xi60RNU2S6M-85" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sJawAF0q9Xi60RNU2S6M-83" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(oklab(0.683701 -0.10856 0.0562662), #ffffff);" value="&lt;pre style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; text-align: start; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;A floresta divide-se em três caminhos...&lt;/span&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="30" width="382" x="1939" y="-470" as="geometry" />
-        </mxCell>
-        <mxCell id="sJawAF0q9Xi60RNU2S6M-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sombra" vertex="1">
-          <mxGeometry height="60" width="120" x="2070" y="-375" as="geometry" />
-        </mxCell>
-        <mxCell id="sJawAF0q9Xi60RNU2S6M-85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ruína" vertex="1">
-          <mxGeometry height="60" width="120" x="2297" y="-375" as="geometry" />
-        </mxCell>
-        <mxCell id="sJawAF0q9Xi60RNU2S6M-86" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="sJawAF0q9Xi60RNU2S6M-83" value="">
-          <mxGeometry relative="1" x="0.0937" as="geometry">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1937.3000000000002" y="-414" />
-              <mxPoint x="2034.5" y="-414" />
+              <mxPoint x="2345" y="-447" />
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-83" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(oklab(0.683701 -0.10856 0.0562662), #ffffff);" value="&lt;pre style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; text-align: start; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;A floresta divide-se em três caminhos...&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="382" x="1977" y="-477" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sombra" vertex="1">
+          <mxGeometry height="60" width="120" x="2108" y="-381" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ruína" vertex="1">
+          <mxGeometry height="60" width="120" x="2285" y="-387" as="geometry" />
+        </mxCell>
+        <mxCell id="sJawAF0q9Xi60RNU2S6M-86" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="sJawAF0q9Xi60RNU2S6M-83" value="">
+          <mxGeometry relative="1" x="-0.4387" as="geometry">
+            <Array as="points">
+              <mxPoint x="1991" y="-447" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-5" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6laiNwapiEclOiDJdlgX-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sJawAF0q9Xi60RNU2S6M-87" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Gruta" vertex="1">
-          <mxGeometry height="60" width="120" x="1881" y="-375" as="geometry" />
+          <mxGeometry height="60" width="120" x="1931" y="-381" as="geometry" />
         </mxCell>
         <mxCell id="sJawAF0q9Xi60RNU2S6M-88" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
           <mxGeometry height="60" width="120" x="-791" y="-256" as="geometry" />
@@ -155,6 +161,50 @@
         </mxCell>
         <mxCell id="sJawAF0q9Xi60RNU2S6M-94" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;" value="Tem medo do vazio" vertex="1">
           <mxGeometry height="60" width="120" x="-602" y="-256" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-7" edge="1" parent="1" source="sJawAF0q9Xi60RNU2S6M-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6laiNwapiEclOiDJdlgX-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Vais te embora" vertex="1">
+          <mxGeometry height="60" width="120" x="1746" y="-271" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-10" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Procuras caminho alternativo" vertex="1">
+          <mxGeometry height="60" width="120" x="1931" y="-271" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-26" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-8" parent="1" style="text;html=1;strokeColor=none;fillColor=#b1ddf0;align=center;verticalAlign=middle;rounded=0;perimeterSpacing=1;labelBorderColor=none;textShadow=0;whiteSpace=wrap;autosizeText=0;fontSize=6;strokeWidth=8;container=0;collapsible=0;metaEdit=0;autosize=0;comic=0;enumerate=0;treeMoving=0;treeFolding=0;" value="&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;Contornas as rochas &lt;br&gt;e encontras um atalho&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="1898.5" y="-175" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Vais te embora" vertex="1">
+          <mxGeometry height="60" width="120" x="1746" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-27" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-11" value="">
+          <mxGeometry relative="1" x="-0.0021" as="geometry">
+            <Array as="points">
+              <mxPoint x="1991.5" y="-21.5" />
+              <mxPoint x="1806" y="-21.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=light-dark(rgb(237, 237, 237), #fdfcfc);" value="&lt;pre&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Enquanto passas pelo atalho tentando &lt;br&gt;não ser espetado por ramos, &lt;br&gt;deixas de reparar que havia um buraco e cais nele.&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="86" width="403" x="1790" y="-123" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-33" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-29">
+          <mxGeometry relative="1" x="-0.008" as="geometry">
+            <Array as="points">
+              <mxPoint x="1991.5" y="-21.5" />
+              <mxPoint x="1982" y="-21.5" />
+            </Array>
+            <mxPoint x="2123.3677368164062" y="52.063140869140625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Vais te embora" vertex="1">
+          <mxGeometry height="60" width="120" x="1922" y="16" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
