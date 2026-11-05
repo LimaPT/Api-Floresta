@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="EJPYcgr9-3SiPmM8EPM-">
-    <mxGraphModel dx="1603" dy="1301" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#004C99)" math="0" shadow="0">
+    <mxGraphModel dx="1469" dy="1217" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#004C99)" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -180,31 +180,86 @@
         <mxCell id="6laiNwapiEclOiDJdlgX-8" parent="1" style="text;html=1;strokeColor=none;fillColor=#b1ddf0;align=center;verticalAlign=middle;rounded=0;perimeterSpacing=1;labelBorderColor=none;textShadow=0;whiteSpace=wrap;autosizeText=0;fontSize=6;strokeWidth=8;container=0;collapsible=0;metaEdit=0;autosize=0;comic=0;enumerate=0;treeMoving=0;treeFolding=0;" value="&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;gg mono&amp;quot;, &amp;quot;Source Code Pro&amp;quot;, Consolas, &amp;quot;Andale Mono WT&amp;quot;, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Lucida Console&amp;quot;, &amp;quot;Lucida Sans Typewriter&amp;quot;, &amp;quot;DejaVu Sans Mono&amp;quot;, &amp;quot;Bitstream Vera Sans Mono&amp;quot;, &amp;quot;Liberation Mono&amp;quot;, &amp;quot;Nimbus Mono L&amp;quot;, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 14px; white-space: pre-wrap; background-color: transparent; color: light-dark(light-dark(oklab(0.683701 -0.10856 0.0562662), rgb(255, 255, 255)), rgb(237, 237, 237));&quot;&gt;Contornas as rochas &lt;br&gt;e encontras um atalho&lt;/span&gt;&lt;/pre&gt;" vertex="1">
           <mxGeometry height="30" width="185" x="1898.5" y="-175" as="geometry" />
         </mxCell>
-        <mxCell id="6laiNwapiEclOiDJdlgX-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Vais te embora" vertex="1">
-          <mxGeometry height="60" width="120" x="1746" y="16" as="geometry" />
-        </mxCell>
-        <mxCell id="6laiNwapiEclOiDJdlgX-27" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-11" value="">
-          <mxGeometry relative="1" x="-0.0021" as="geometry">
+        <mxCell id="6laiNwapiEclOiDJdlgX-40" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" target="6laiNwapiEclOiDJdlgX-4" value="">
+          <mxGeometry relative="1" x="0.1967" as="geometry">
             <Array as="points">
-              <mxPoint x="1991.5" y="-21.5" />
-              <mxPoint x="1806" y="-21.5" />
+              <mxPoint x="1750" y="-179.3" />
+              <mxPoint x="1806" y="-179.3" />
             </Array>
+            <mxPoint x="1597.11" y="-114.77" as="sourcePoint" />
+            <mxPoint x="1699" y="108" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Procuras uma saída e vais embora" vertex="1">
+          <mxGeometry height="60" width="120" x="1730" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-34" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6laiNwapiEclOiDJdlgX-29" value="">
+          <mxGeometry relative="1" x="-0.008" as="geometry">
+            <mxPoint x="2025.13" y="-7.72" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6laiNwapiEclOiDJdlgX-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=light-dark(rgb(237, 237, 237), #fdfcfc);" value="&lt;pre&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Enquanto passas pelo atalho tentando &lt;br&gt;não ser espetado por ramos, &lt;br&gt;deixas de reparar que havia um buraco e cais nele.&lt;/span&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="86" width="403" x="1790" y="-123" as="geometry" />
+          <mxGeometry height="86" width="403" x="1789.5" y="-95" as="geometry" />
         </mxCell>
-        <mxCell id="6laiNwapiEclOiDJdlgX-33" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-29">
-          <mxGeometry relative="1" x="-0.008" as="geometry">
-            <Array as="points">
-              <mxPoint x="1991.5" y="-21.5" />
-              <mxPoint x="1982" y="-21.5" />
-            </Array>
-            <mxPoint x="2123.3677368164062" y="52.063140869140625" as="targetPoint" />
+        <mxCell id="6laiNwapiEclOiDJdlgX-42" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6laiNwapiEclOiDJdlgX-43" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1991" y="218" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6laiNwapiEclOiDJdlgX-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&amp;nbsp;Vais te embora" vertex="1">
-          <mxGeometry height="60" width="120" x="1922" y="16" as="geometry" />
+        <mxCell id="6laiNwapiEclOiDJdlgX-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tentas trepar por onde caíste" vertex="1">
+          <mxGeometry height="60" width="120" x="1890" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-37" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="6laiNwapiEclOiDJdlgX-23" value="">
+          <mxGeometry relative="1" x="0.0049" as="geometry">
+            <mxPoint x="2060.53" y="-28.15" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-46" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6laiNwapiEclOiDJdlgX-36" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2143.5" y="218" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-48" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-47" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2159" y="239.5" />
+              <mxPoint x="1799" y="239.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-53" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="6laiNwapiEclOiDJdlgX-52" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Exploras a gruta" vertex="1">
+          <mxGeometry height="60" width="120" x="2099" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-38" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="6laiNwapiEclOiDJdlgX-23" value="">
+          <mxGeometry relative="1" x="0.0082" as="geometry">
+            <mxPoint x="1890.33" y="-26.11" as="sourcePoint" />
+            <mxPoint x="1846" y="-43" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;fontFamily=Helvetica;fontSize=12;fontColor=light-dark(rgb(237, 237, 237), #fdfcfc);" value="&lt;pre&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Falhas miserávelmente e &lt;br&gt;cais denovo para a gruta&lt;/span&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="70" width="203" x="1848.5" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-47" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1739" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-49" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="1919" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-51" edge="1" parent="1" source="6laiNwapiEclOiDJdlgX-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6laiNwapiEclOiDJdlgX-49" value="">
+          <mxGeometry relative="1" x="0.2308" as="geometry">
+            <Array as="points">
+              <mxPoint x="2159" y="239.4" />
+              <mxPoint x="1979" y="239.4" />
+            </Array>
+            <mxPoint x="2511" y="233" as="sourcePoint" />
+            <mxPoint x="2151" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6laiNwapiEclOiDJdlgX-52" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="2099" y="281" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
