@@ -48,40 +48,52 @@ Goliardo = PlayerClass(name="Goliardo",
 Plebeu = PlayerClass(name="Plebeu", 
             base_attributes=Attributes(forca=1, carisma=1, destreza=1))
 
+def add_attribute(attribute: str, amount: int = 1) -> None:
+    player.add_attribute(attribute, amount)
+
+
+def subtract_attribute(attribute: str, amount: int = 1) -> None:
+    player.subtract_attribute(attribute, amount)
+
+
+def change_class(player_class: PlayerClass) -> None:
+    player.change_class(player_class)
+
+
 #Tabela Random
 def tplebeu ():
     tabela = random.randint(1, 100)
     match tabela:
         case range(1, 4):
-            # +1 Stretgth
-            print("Ganhas +1 Strength!")
+            add_attribute("forca", 1)
+            print("Ganhas +1 Força!")
         case range(5, 8):
-            # +1 Dexterity
-            print("Ganhas +1 Dexterity!")
+            add_attribute("destreza", 1)
+            print("Ganhas +1 Destreza!")
         case range(9, 12):
-            # +1 Carisma
-            print("Ganhas +1 Charisma!")
+            add_attribute("carisma", 1)
+            print("Ganhas +1 Carisma!")
         case range(13, 17):
-            # +3 Random Stat
-            print("Ganhas +3 Stat!")
+            add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
+            print("Ganhas +3 Random Stat!")
         case range(18, 27):
-            # -2 Random Stat
+            subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
             print("Perdes -2 Stat!")
         case range(28, 35):
-            # End
             print("Aparecem os 4 cavaleiros do apocalipse e morres!")
+            exit()
         case range(36, 45):
             # If nas ruínas, voltas para gruta / If nas gruta voltas para sombra / If nas sombras, voltas para ruína
             print("Foste para ____!")   
         case range(46, 55):
-            # -1 Stretgth 
-            print("Perdes -1 Strength!")
+            subtract_attribute("forca", 1)
+            print("Perdes -1 Força!")
         case range(56, 65):
-            # -1 Charisma
-            print("Perdes -1 Charisma!")
+            subtract_attribute("carisma", 1)
+            print("Perdes -1 Carisma!")
         case range(66, 75):
-            # -1 Dexterity
-            print("Perdes -1 Dexterity!")
+            subtract_attribute("destreza", 1)
+            print("Perdes -1 Destreza!")
         case range(76, 87):
             # voltar 2 escolhas atrás
             print("Deixaste cair o teu, porta chaves favorito. Tens de voltar 2 escolhas atrás.")
@@ -89,45 +101,45 @@ def tplebeu ():
             # + Cartão da Escola
             print("Ganhas o cartão da escola")
         case range(94, 96):
-            # Mudas de classe
+            change_class(random.choice([Goliardo, Gatuno, Gadiador]))
             print("Tornas-te (Goliardo/Gatuno/Gladiador)")
         case range(97, 100):
-            # Fim Meh
             print("Perdes-te...")
+            exit()
 
 def tnormal ():
     tabela = random.randint(1, 100)
     match tabela:
         case range(1, 7):
-            # +1 Stretgth
-            print("Ganhas +1 Strength!")
+            add_attribute("forca", 1)
+            print("Ganhas +1 Força!")
         case range(8, 14):
-            # +1 Dexterity
-            print("Ganhas +1 Dexterity!")
+            add_attribute("destreza", 1)
+            print("Ganhas +1 Destreza!")
         case range(15, 21):
-            # +1 Carisma
-            print("Ganhas +1 Charisma!")
+            add_attribute("carisma", 1)
+            print("Ganhas +1 Carisma!")
         case range(22, 28):
-            # +3 Random Stat
-            print("Ganhas +3 Stat!")
+            add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
+            print("Ganhas +3 Random Stat!")
         case range(29, 34):
-            # -2 Random Stat
+            subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
             print("Perdes -2 Stat!")
         case range(35, 40):
-            # End
             print("Aparecem os 4 cavaleiros do apocalipse e morres!")
+            exit()
         case range(41, 48):
             # If nas ruínas, voltas para gruta / If nas gruta voltas para sombra / If nas sombras, voltas para ruína
             print("Foste para ____!")   
         case range(49, 54):
-            # -1 Stretgth 
-            print("Perdes -1 Strength!")
+            subtract_attribute("forca", 1) 
+            print("Perdes -1 Força!")
         case range(55, 60):
-            # -1 Charisma
-            print("Perdes -1 Charisma!")
+            subtract_attribute("carisma", 1)
+            print("Perdes -1 Carisma!")
         case range(61, 66):
-            # -1 Dexterity
-            print("Perdes -1 Dexterity!")
+            subtract_attribute("destreza", 1)
+            print("Perdes -1 Destreza!")
         case range(67, 78):
             # voltar 2 escolhas atrás
             print("Deixaste cair o teu, porta chaves favorito. Tens de voltar 2 escolhas atrás.")
@@ -135,30 +147,29 @@ def tnormal ():
             # + Cartão da Escola
             print("Ganhas o cartão da escola")
         case range(91, 92):
-            # Mudas de classe
+            change_class(random.choice([Goliardo, Gatuno, Gadiador]))
             print("Tornas-te (Goliardo/Gatuno/Gladiador)")
         case range(93, 98):
-            # Fim Meh
             print("Perdes-te...")
+            exit()
         case range(99, 100):
-            #Tornas-te Plebeu
+            change_class(Plebeu)
             print("Tornas-te Plebeu!")
 
+classes = {
+    "gladiador": Gadiador,
+    "gatuno": Gatuno,
+    "goliardo": Goliardo,
+}
 
-#escolha de classes
-print('Escolha uma classe: Gladiador, Gatuno ou Goliardo ')
-escolha = input('> ').lower()
+print("Escolha uma classe: Gladiador, Gatuno ou Goliardo")
+escolha = input("> ").strip().lower()
+player_class = classes.get(escolha, Plebeu)
+player = Player(name="Jogador", player_class=player_class)
 
-if escolha in classes_player:
-    stats_class = classes_player[escolha].copy()
-    #cria uma variável que pega no dicionário que foi criado antes e,
-    #com a escolha, dá "fetch" numa das classes que foram criadas e copia essa classe para esta nova variável
-
-    print(f'Parabéns! Tornaste-te num {escolha.capitalize}!!!')
-    print(f'os teus stats são: {stats_class}\n ')
+if escolha in classes:
+    print(f"Parabéns! Tornaste-te num {player.player_class.name}!!!")
 else:
-    print('\n escolha inválida... Apenas membros da PLEBE não sabem ler!')
-    stats_class = {'strength': 1, 'charisma': 1, 'dexterity': 1}
-    print(f'Parabéns! Tornaste-te num PLEBEU!!!\n os teus stats são {stats_class}\n não há volta atrás...')   
+    print("\nEscolha inválida... Tornaste-te num PLEBEU!")
 
-def stats_player:(classes_) 
+print(f"Os teus stats são: {player.attributes}")
