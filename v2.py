@@ -50,12 +50,8 @@ Plebeu = PlayerClass(name="Plebeu",
 #Funções para alterar atributos do jogador pela tabela/simplificado
 def add_attribute(attribute: str, amount: int = 1) -> None:
     player.add_attribute(attribute, amount)
-
-
 def subtract_attribute(attribute: str, amount: int = 1) -> None:
     player.subtract_attribute(attribute, amount)
-
-
 def change_class(player_class: PlayerClass) -> None:
     player.change_class(player_class)
 
@@ -105,7 +101,6 @@ def tplebeu ():
         case range(97, 100):
             print("Perdes-te...")
             exit()
-
 def tnormal ():
     tabela = random.randint(1, 100)
     match tabela:
@@ -160,9 +155,7 @@ classes = {
     "gatuno": Gatuno,
     "goliardo": Goliardo,
 }
-
 #Início do jogo
-
 print("Escolha uma classe: Gladiador, Gatuno ou Goliardo")
 escolha = input("> ").strip().lower()
 player_class = classes.get(escolha, Plebeu)
@@ -173,3 +166,23 @@ if escolha in classes:
 else:
     print("\nEscolha inválida... Tornaste-te num PLEBEU!")
 print(f"Os teus stats são: {player.attributes}")
+
+#Primeira Opção
+def cenario_floresta(player):
+    print('\nA floresta divide-se em três caminhos...')
+    print('1 - Gruta')
+    print('2 - Sombras')
+    print('3 - Ruínas')
+
+    path = input('Que caminho escolhes? ')
+
+    match path:
+        case "1" | "gruta":
+            cenario_gruta(player)
+        case "2" | "sombras":
+                cenario_sombras(player)
+        case "3" | "ruínas" | "ruinas":
+            cenario_ruinas(player)
+        case _:
+            print('Opção inválida, tenta novamente.')
+            cenario_floresta(player)
