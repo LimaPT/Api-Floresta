@@ -25,6 +25,7 @@ class Player:
             carisma=self.player_class.base_attributes.carisma,
         )
 
+#Funções para alterar atributos do jogador
     def add_attribute(self, attribute: str, amount: int = 1) -> None:
         self._change_attribute(attribute, abs(amount))
 
@@ -38,7 +39,7 @@ class Player:
         current_value = getattr(self.attributes, attribute)
         setattr(self.attributes, attribute, current_value + amount)
 
-#classes de personagem 
+#Classes de personagem 
 Gadiador = PlayerClass(name="Gladiador", 
             base_attributes=Attributes(forca=7, carisma=4, destreza=3))
 Gatuno = PlayerClass(name="Gatuno", 
@@ -48,6 +49,7 @@ Goliardo = PlayerClass(name="Goliardo",
 Plebeu = PlayerClass(name="Plebeu", 
             base_attributes=Attributes(forca=1, carisma=1, destreza=1))
 
+#Funções para alterar atributos do jogador pela tabela/simplificado
 def add_attribute(attribute: str, amount: int = 1) -> None:
     player.add_attribute(attribute, amount)
 
@@ -59,8 +61,7 @@ def subtract_attribute(attribute: str, amount: int = 1) -> None:
 def change_class(player_class: PlayerClass) -> None:
     player.change_class(player_class)
 
-
-#Tabela Random
+#Tabelas Random
 def tplebeu ():
     tabela = random.randint(1, 100)
     match tabela:
@@ -162,6 +163,8 @@ classes = {
     "goliardo": Goliardo,
 }
 
+#Início do jogo
+
 print("Escolha uma classe: Gladiador, Gatuno ou Goliardo")
 escolha = input("> ").strip().lower()
 player_class = classes.get(escolha, Plebeu)
@@ -171,5 +174,4 @@ if escolha in classes:
     print(f"Parabéns! Tornaste-te num {player.player_class.name}!!!")
 else:
     print("\nEscolha inválida... Tornaste-te num PLEBEU!")
-
 print(f"Os teus stats são: {player.attributes}")
