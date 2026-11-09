@@ -6,12 +6,10 @@ class Attributes:
     forca: int = 0
     destreza: int = 0
     carisma: int = 0
-
 @dataclass(frozen=True)
 class PlayerClass:
     name: str
     base_attributes: Attributes
-
 @dataclass
 class Player:
     name: str
