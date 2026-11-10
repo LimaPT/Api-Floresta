@@ -6,6 +6,7 @@ class Attributes:
     forca: int = 0
     destreza: int = 0
     carisma: int = 0
+    cartao_escola: bool = False
 
 @dataclass(frozen=True)
 class PlayerClass:
@@ -23,6 +24,7 @@ class Player:
             forca=self.player_class.base_attributes.forca,
             destreza=self.player_class.base_attributes.destreza,
             carisma=self.player_class.base_attributes.carisma,
+            cartao_escola=self.player_class.base_attributes.cartao_escola
         )
 
     # Função para alterar a classe do jogador (Necessária para o teu código funcionar)
@@ -32,6 +34,7 @@ class Player:
             forca=new_class.base_attributes.forca,
             destreza=new_class.base_attributes.destreza,
             carisma=new_class.base_attributes.carisma,
+            cartao_escola=new_class.base_attributes.cartao_escola
         )
 
     # Funções para alterar atributos do jogador
@@ -42,7 +45,7 @@ class Player:
         self._change_attribute(attribute, -abs(amount))
 
     def _change_attribute(self, attribute: str, amount: int) -> None:
-        if attribute not in {"forca", "destreza", "carisma"}:
+        if attribute not in {"forca", "destreza", "carisma","cartao_escola"}:
             raise ValueError(f"Unknown attribute: {attribute}")
 
         current_value = getattr(self.attributes, attribute)
@@ -66,93 +69,99 @@ def subtract_attribute(attribute: str, amount: int = 1) -> None:
 def change_class(player_class: PlayerClass) -> None:
     player.change_class(player_class)
 
-# Tabelas Random (Corrigidas para a sintaxe válida de Python)
+#Tabelas Random
 def tplebeu ():
     tabela = random.randint(1, 100)
     match tabela:
-        case n if n in range(1, 5):
+        case range(1, 4):
             add_attribute("forca", 1)
             print("Ganhas +1 Força!")
-        case n if n in range(5, 9):
+        case range(5, 8):
             add_attribute("destreza", 1)
             print("Ganhas +1 Destreza!")
-        case n if n in range(9, 13):
+        case range(9, 12):
             add_attribute("carisma", 1)
             print("Ganhas +1 Carisma!")
-        case n if n in range(13, 18):
+        case range(13, 17):
             add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
             print("Ganhas +3 Random Stat!")
-        case n if n in range(18, 28):
+        case range(18, 27):
             subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
             print("Perdes -2 Stat!")
-        case n if n in range(28, 36):
+        case range(28, 35):
             print("Aparecem os 4 cavaleiros do apocalipse e morres!")
             exit()
-        case n if n in range(36, 46):
-            print("Foste para outro lugar místico!")   
-        case n if n in range(46, 56):
+        case range(36, 45):
+            # If nas ruínas, voltas para gruta / If nas gruta voltas para sombra / If nas sombras, voltas para ruína
+            print("Foste para ____!")   
+        case range(46, 55):
             subtract_attribute("forca", 1)
             print("Perdes -1 Força!")
-        case n if n in range(56, 66):
+        case range(56, 65):
             subtract_attribute("carisma", 1)
             print("Perdes -1 Carisma!")
-        case n if n in range(66, 76):
+        case range(66, 75):
             subtract_attribute("destreza", 1)
             print("Perdes -1 Destreza!")
-        case n if n in range(76, 88):
+        case range(76, 87):
+            # voltar 2 escolhas atrás
             print("Deixaste cair o teu, porta chaves favorito. Tens de voltar 2 escolhas atrás.")
-        case n if n in range(88, 94):
+        case range(88, 93):
+            change_atribute("cartao_escola", True)
             print("Ganhas o cartão da escola")
-        case n if n in range(94, 97):
+        case range(94, 96):
             change_class(random.choice([Goliardo, Gatuno, Gadiador]))
             print("Tornas-te (Goliardo/Gatuno/Gladiador)")
-        case n if n in range(97, 101):
+        case range(97, 100):
             print("Perdes-te...")
             exit()
 
 def tnormal ():
     tabela = random.randint(1, 100)
     match tabela:
-        case n if n in range(1, 8):
+        case range(1, 7):
             add_attribute("forca", 1)
             print("Ganhas +1 Força!")
-        case n if n in range(8, 15):
+        case range(8, 14):
             add_attribute("destreza", 1)
             print("Ganhas +1 Destreza!")
-        case n if n in range(15, 22):
+        case range(15, 21):
             add_attribute("carisma", 1)
             print("Ganhas +1 Carisma!")
-        case n if n in range(22, 29):
+        case range(22, 28):
             add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
             print("Ganhas +3 Random Stat!")
-        case n if n in range(29, 35):
+        case range(29, 34):
             subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
             print("Perdes -2 Stat!")
-        case n if n in range(35, 41):
+        case range(35, 40):
             print("Aparecem os 4 cavaleiros do apocalipse e morres!")
             exit()
-        case n if n in range(41, 49):
-            print("Foste para outro lugar místico!")   
-        case n if n in range(49, 55):
+        case range(41, 48):
+            # If nas ruínas, voltas para gruta / If nas gruta voltas para sombra / If nas sombras, voltas para ruína
+            print("Foste para ____!")   
+        case range(49, 54):
             subtract_attribute("forca", 1) 
             print("Perdes -1 Força!")
-        case n if n in range(55, 61):
+        case range(55, 60):
             subtract_attribute("carisma", 1)
             print("Perdes -1 Carisma!")
-        case n if n in range(61, 67):
+        case range(61, 66):
             subtract_attribute("destreza", 1)
             print("Perdes -1 Destreza!")
-        case n if n in range(67, 79):
+        case range(67, 78):
+            # voltar 2 escolhas atrás
             print("Deixaste cair o teu, porta chaves favorito. Tens de voltar 2 escolhas atrás.")
-        case n if n in range(79, 91):
+        case range(79, 90):
+            change_attribute("cartao_escola", True)
             print("Ganhas o cartão da escola")
-        case n if n in range(91, 93):
+        case range(91, 92):
             change_class(random.choice([Goliardo, Gatuno, Gadiador]))
             print("Tornas-te (Goliardo/Gatuno/Gladiador)")
-        case n if n in range(93, 99):
+        case range(93, 98):
             print("Perdes-te...")
             exit()
-        case n if n in range(99, 101):
+        case range(99, 100):
             change_class(Plebeu)
             print("Tornas-te Plebeu!")
 
