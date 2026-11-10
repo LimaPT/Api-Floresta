@@ -53,13 +53,13 @@ class Player:
 
 # Classes de personagem 
 Gadiador = PlayerClass(name="Gladiador", 
-            base_attributes=Attributes(forca=7, carisma=4, destreza=3))
+            base_attributes=Attributes(forca=7, carisma=4, destreza=3, cartao_escola=False))
 Gatuno = PlayerClass(name="Gatuno", 
-            base_attributes=Attributes(forca=3, carisma=5, destreza=7))
+            base_attributes=Attributes(forca=3, carisma=5, destreza=7, cartao_escola=True))
 Goliardo = PlayerClass(name="Goliardo", 
-            base_attributes=Attributes(forca=3, carisma=7, destreza=5))
+            base_attributes=Attributes(forca=3, carisma=7, destreza=5, cartao_escola=False))
 Plebeu = PlayerClass(name="Plebeu", 
-            base_attributes=Attributes(forca=1, carisma=1, destreza=1))
+            base_attributes=Attributes(forca=1, carisma=1, destreza=1, cartao_escola=False))
 
 # Funções para alterar atributos do jogador pela tabela/simplificado
 def add_attribute(attribute: str, amount: int = 1) -> None:
