@@ -6,17 +6,33 @@ class Attributes:
     forca: int = 0
     destreza: int = 0
     carisma: int = 0
-    cartao_escola: bool = False
+    cartao_escola: bool = field(default=False, repr=False)
 
 @dataclass(frozen=True)
-class PlayerClass:
+class Class:
     name: str
     base_attributes: Attributes
+
+# Classes de personagem 
+Gadiador = Class(name="Gladiador", 
+            base_attributes=Attributes(forca=7, carisma=4, destreza=3, cartao_escola=False))
+Gatuno = Class(name="Gatuno", 
+            base_attributes=Attributes(forca=3, carisma=5, destreza=7, cartao_escola=True))
+Goliardo = Class(name="Goliardo", 
+            base_attributes=Attributes(forca=3, carisma=7, destreza=5, cartao_escola=False))
+Plebeu = Class(name="Plebeu", 
+            base_attributes=Attributes(forca=1, carisma=1, destreza=1, cartao_escola=False))
+
+player_classes = {
+    "gladiador": Gadiador,
+    "gatuno": Gatuno,
+    "goliardo": Goliardo,
+}
 
 @dataclass
 class Player:
     name: str
-    player_class: PlayerClass
+    player_class: Class
     attributes: Attributes = field(init=False)
 
     def __post_init__(self) -> None:
@@ -28,7 +44,7 @@ class Player:
         )
 
     # Função para alterar a classe do jogador (Necessária para o teu código funcionar)
-    def change_class(self, new_class: PlayerClass) -> None:
+    def change_class(self, new_class: Class) -> None:
         self.player_class = new_class
         self.attributes = Attributes(
             forca=new_class.base_attributes.forca,
@@ -51,22 +67,23 @@ class Player:
         current_value = getattr(self.attributes, attribute)
         setattr(self.attributes, attribute, current_value + amount)
 
-# Classes de personagem 
-Gadiador = PlayerClass(name="Gladiador", 
-            base_attributes=Attributes(forca=7, carisma=4, destreza=3))
-Gatuno = PlayerClass(name="Gatuno", 
-            base_attributes=Attributes(forca=3, carisma=5, destreza=7))
-Goliardo = PlayerClass(name="Goliardo", 
-            base_attributes=Attributes(forca=3, carisma=7, destreza=5))
-Plebeu = PlayerClass(name="Plebeu", 
-            base_attributes=Attributes(forca=1, carisma=1, destreza=1))
 
 # Funções para alterar atributos do jogador pela tabela/simplificado
 def add_attribute(attribute: str, amount: int = 1) -> None:
     player.add_attribute(attribute, amount)
 def subtract_attribute(attribute: str, amount: int = 1) -> None:
     player.subtract_attribute(attribute, amount)
-def change_class(player_class: PlayerClass) -> None:
+def change_attribute(attribute: str, value: bool) -> None:
+    if attribute != "cartao_escola":
+        raise ValueError(f"Unknown attribute: {attribute}")
+    setattr(player.attributes, attribute, value)
+
+
+def change_atribute(attribute: str, value: bool) -> None:
+    change_attribute(attribute, value)
+
+
+def change_class(player_class: Class) -> None:
     player.change_class(player_class)
 
 #Tabelas Random
@@ -165,24 +182,25 @@ def tnormal ():
             change_class(Plebeu)
             print("Tornas-te Plebeu!")
 
-classes = {
-    "gladiador": Gadiador,
-    "gatuno": Gatuno,
-    "goliardo": Goliardo,
-    "Plebeu": Plebeu
-}
-
 # Início do jogo
 print("Escolha uma classe: Gladiador, Gatuno ou Goliardo")
 escolha = input("> ").strip().lower()
-player_class = classes.get(escolha, Plebeu)
+player_class = player_classes.get(escolha, Plebeu)
 player = Player(name="Jogador", player_class=player_class)
 
-if escolha in classes:
+if escolha in player_classes:
     print(f"Parabéns! Tornaste-te num {player.player_class.name}!!!")
 else:
     print("\nEscolha inválida... Tornaste-te num PLEBEU!")
-print(f"Os teus stats são: {player.attributes}")
+stats_message = (
+    "Os teus stats são: "
+    f"Força= {player.attributes.forca}, "
+    f"Destreza= {player.attributes.destreza}, "
+    f"Carisma= {player.attributes.carisma}"
+)
+if player.player_class is Gatuno:
+    stats_message += " e tens o cartão da escola!"
+print(stats_message)
 
 # Primeira Opção
 def cenario_floresta(player):
@@ -211,17 +229,14 @@ def cenario_floresta(player):
 def cenario_ruinas(player):
     print('\nEscolheste as ruínas...')
     print('1 - Explorar as ruínas')
-    print('2 - Voltar para a floresta')
+    if player.player_class == Plebeu:
+        print('2 - Voltar para a floresta')
 
     choice = input('O que queres fazer? ').strip().lower()
 
     match choice:
         case "1" | "explorar":
             print("Explorando as ruínas...")
-            if player.player_class == Plebeu:
-                tplebeu()
-            else:
-                tnormal()
         case "2" | "voltar":
             cenario_floresta(player)
         case _:
@@ -232,5 +247,19 @@ def cenario_ruinas(player):
                 tnormal()
             cenario_ruinas(player)
 
-    
-    
+def cenario_sombras(player):
+    print("\nEscolheste as sombras...")
+    if player.player_class == Plebeu:
+        tplebeu()
+    else:
+        tnormal()
+
+def cenario_gruta(player):
+    print("\nEscolheste a gruta...")
+    if player.player_class == Plebeu:
+        tplebeu()
+    else:
+        tnormal()
+
+
+cenario_floresta(player)
