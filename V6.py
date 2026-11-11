@@ -261,5 +261,4 @@ def cenario_gruta(player):
     else:
         tnormal()
 
-
 cenario_floresta(player)
