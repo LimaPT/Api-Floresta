@@ -229,14 +229,80 @@ def cenario_floresta(player):
 def cenario_ruinas(player):
     print('\nEscolheste as ruínas...')
     print('1 - Explorar as ruínas')
-    if player.player_class == Plebeu:
-        print('2 - Voltar para a floresta')
+    print('2 - Voltar para a floresta')
 
-    choice = input('O que queres fazer? ').strip().lower()
+    choicer = input('O que queres fazer? ').strip().lower()
 
-    match choice:
+    match choicer:
         case "1" | "explorar":
             print("Explorando as ruínas...")
+            choicer = input("Escolha uma ação: 1 - Sentar-se a ouvir os sons das floresta, 2 - Deixas-te levar pelo... , 3 - Decides tirar uma selfie").strip().lower()
+            match choicer:
+
+                case "1" | "sentar-se":
+                    print("Sentaste-te a ouvir os sons da floresta...\n Passado um tempo, sentes-te uma presença agradável e relaxante. Sentes que algo te empurra para algum lugar, por isso andas.\n")
+                    print("Um tempo depois observas algo um pouco estranho, um BURGERKING! Parece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \n FIM BOM")
+                    exit()   
+
+                case "2" | "deixar-se levar":
+                    print("Deixaste-te levar pelo... \nSOM DA MÚSICA! \nO que ouves?")
+                    print("1 - Poker Face: Lady Gaga, 2 - Beleiver: Imagine Dragons, 3 - Sweden: C418 ")
+                    choicem = input("Escolha uma música: ").strip().lower()
+                    match choicem:
+                        case "1" | "poker face":
+                            if player.attributes.destreza >= 7:
+                                print("Escolheste Poker Face! \nComeças a dançar e rápidamente percebes que estás a divar!")
+                                print("Os espíritos agradecem a tua performance e ajudam-te a atravessar a floresta.")
+                                print("Um tempo depois observas algo um pouco estranho, um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                                exit()
+                            else:
+                                print("Escolheste Poker Face! \nComeças a dançar e rápidamente percebes que não sabes o que estás a fazer!")
+                                print("Algo fica irritado, manda te de volta para a floresta e perdes-te!")
+                                print("FIM MEH")
+                                exit()
+                        case "2" | "beleiver":
+                            print("Escolheste Beleiver! \nComeças a ouvir e tentas dançar, mas rapidamente lembras-te das aulas de educação física.\n \nNão és o único com essa lembrança... Algo oprime-te e ouves: \nEste é o teu fim... ")
+                            print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR NOS LEMBRARES")
+                            choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                            match choicec:
+                                case "sim":
+                                    print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
+                                    print("FIM MAU")
+                                    exit()
+                                case "não":
+                                    print("NÃO Sentes cossegas?? \n \nAGORA TERÁS DE FAZER O VAI E VEM ETERNAMENTE")
+                                    print("FIM CURSED")
+                                    exit()
+                        case "3" | "sweden":
+                            print("Escolheste Sweden! \nComeças a ouvir e lembras-te de jogar Minecraft e a sua tranquilidade. \nComeças a deanbular pela floresta e...")
+                            print("Um tempo depois observas algo um pouco estranho, um BURGERKING! Parece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")        
+                            
+                        case "3" | "selfie":
+                            print("Decidiste tirar uma selfie...")
+                            if player.attributes.carisma >= 7:
+                                print("Uma presença carismática! Eles ficam honrados e guiam-te para a floresta.")
+                                print("Um tempo depois observas algo um pouco estranho, um BURGERKING! Parece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                                exit()
+                            else:
+                                print("Quem és tu para tirar uma selfie com TAMANHAS entidades???? \nEles oprimem-te e ouves: \nEste é o teu fim... ")
+                                print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO")
+                                choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                                match choicec:
+                                    case "sim":
+                                        print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
+                                        print("FIM MAU")
+                                        exit()
+                                    case "não":
+                                        print("NÃO Sentes cossegas?? \n \nAGORA TERÁS DE FAZER O VAI E VEM ETERNAMENTE")
+                                        print("FIM CURSED")         
+                case _:
+                    print('Opção inválida, tenta novamente.')
+                    if player.player_class == Plebeu:
+                        tplebeu()
+                    else:
+                        tnormal()
+                    cenario_ruinas(player)
+
         case "2" | "voltar":
             cenario_floresta(player)
         case _:
