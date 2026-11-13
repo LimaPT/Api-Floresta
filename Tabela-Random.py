@@ -96,3 +96,88 @@ def tnormal ():
             #Tornas-te Plebeu
             print("Tornas-te Plebeu!")
 
+            #Tabelas Random
+def tplebeu ():
+    tabela = random.randint(1, 100)
+    match tabela:
+        case range(1, 5):
+            add_attribute("forca", 1)
+            print("Ganhas +1 Força!")
+        case range(6, 11):
+            add_attribute("destreza", 1)
+            print("Ganhas +1 Destreza!")
+        case range(12, 17):
+            add_attribute("carisma", 1)
+            print("Ganhas +1 Carisma!")
+        case range(18, 24):
+            add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
+            print("Ganhas +3 Random Stat!")
+        case range(25, 36):
+            subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
+            print("Perdes -2 Stat!")
+        case range(37, 44):
+            print("Aparecem os 4 cavaleiros do apocalipse e morres!")
+            exit()
+        case range(45, 56):
+            subtract_attribute("forca", 1)
+            print("Perdes -1 Força!")
+        case range(57, 68):
+            subtract_attribute("carisma", 1)
+            print("Perdes -1 Carisma!")
+        case range(69, 80):
+            subtract_attribute("destreza", 1)
+            print("Perdes -1 Destreza!")
+        case range(81, 88):
+            change_atribute("cartao_escola", True)
+            print("Ganhas o cartão da escola")
+        case range(89, 91):
+            change_class(random.choice([Goliardo, Gatuno, Gadiador]))
+            print("Tornas-te (Goliardo/Gatuno/Gladiador)")
+        case range(92, 100):
+            print("Perdes-te...")
+            exit()
+
+def tnormal ():
+    tabela = random.randint(1, 100)
+    match tabela:
+        case range(1, 7):
+            add_attribute("forca", 1)
+            print("Ganhas +1 Força!")
+        case range(8, 14):
+            add_attribute("destreza", 1)
+            print("Ganhas +1 Destreza!")
+        case range(15, 21):
+            add_attribute("carisma", 1)
+            print("Ganhas +1 Carisma!")
+        case range(22, 28):
+            add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
+            print("Ganhas +3 Random Stat!")
+        case range(29, 35):
+            subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
+            print("Perdes -2 Stat!")
+        case range(36, 43):
+            print("Aparecem os 4 cavaleiros do apocalipse e morres!")
+            exit()
+        case range(44, 53):
+            subtract_attribute("forca", 1) 
+            print("Perdes -1 Força!")
+        case range(54, 63):
+            subtract_attribute("carisma", 1)
+            print("Perdes -1 Carisma!")
+        case range(64, 73):
+            subtract_attribute("destreza", 1)
+            print("Perdes -1 Destreza!")
+        case range(74, 85):
+            change_attribute("cartao_escola", True)
+            print("Ganhas o cartão da escola")
+        case range(86, 89):
+            change_class(random.choice([Goliardo, Gatuno, Gadiador]))
+            print("Tornas-te (Goliardo/Gatuno/Gladiador)")
+        case range(90, 97):
+            print("Perdes-te...")
+            exit()
+        case range(98, 100):
+            change_class(Plebeu)
+            print("Tornas-te Plebeu!")
+            
+
