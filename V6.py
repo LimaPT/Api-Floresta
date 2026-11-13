@@ -216,7 +216,7 @@ def cenario_gruta(player):
         print("BOOOOOOOOOM DIAAAAAAAAAAAAAA!")
         print("Tens que fazer uma reação ácido-redução com a professora de FQ")
         print("\nNa oxidação, o número de oxidação aumenta:1 , ou diminui:2 ?")
-        option_1_1 = input("\n >") 
+        option_1_1 = input("\n>")         
         if option_1_1 == "1":
             print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
             print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
@@ -239,33 +239,31 @@ def cenario_gruta(player):
     else:
         print("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
         choiced = input("Tens o cartão da escola? SIM OU NÃO?\n>").strip().lower()
-        match choiced == "sim"|"s":
-            case True:
-                player.attributes.cartao_escola=True
-                print("Mostraste o cartão da escola e deixaram-te passar...!")
-            case False:
-                player.attributes.cartao_escola=False
-                print("Não tens o cartão da escola, tens que fazer uma reação ácido-redução")
-                print("\nNa oxidação, o número de oxidação aumenta; 1 ou diminui; 2?")
-                option_1_2 = input("\n >")
-                if option_1_2 == "1":
-                    print("Erraste, foste enviado para as ruínas, e és consumindo pelos espirito")
-                else:
-                    print("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
-                    print("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
-                    print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
-                    exit()
-        if choiced == "não"or"n"or"nao":
-                player.attributes.cartao_escola=False
-                print("Não tens o cartão da escola.\n 1- Aceitas o teu destino e vais fazer a reação ácido-redução, 2- Tentas a tua sorte com a tua personalidade carismática, 3- Propões um braço de ferro à Dª Glória")
-                if choiced == "1":
-                    print("\nNa oxidação, o número de oxidação aumenta; 1 ou diminui; 2?")
-                    option_1_2 = input("\n >")
-                    if option_1_2 == "1":
+        if choiced in ("sim", "s"):
+            player.attributes.cartao_escola=True
+            print("Mostraste o cartão da escola e deixaram-te passar...!")
+        else:
+            player.attributes.cartao_escola=False
+            print("Não tens o cartão da escola, tens que fazer uma reação ácido-redução.\n")
+            print("Na oxidação, o número de oxidação Aumenta - 1, ou Diminui - 2?\n")
+            option_1_2 = input("\n>")
+            if option_1_2 == "1":
+                print("Erraste, foste enviado para as ruínas, e és consumindo pelos espirito")
+            else:
+                print("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                print("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                exit()
+        if choiced == "não" or choiced == "n" or choiced == "nao":
+                choiceg=input("Não tens o cartão da escola.\n 1- Aceitas o teu destino e vais fazer a reação ácido-redução, 2- Tentas a tua sorte com a tua personalidade carismática, 3- Propões um braço de ferro à Dª Glória:\n>")
+                if choiceg == "1":
+                    print("\nNa oxidação, o número de oxidação Aumenta - 1, ou Diminui - 2?\n")
+                    choiceq = input("\n >")
+                    if choiceq == "1":
                         print("Erraste, foste enviado para as ruínas, e és consumindo pelos espirito")
                     else:
                         print("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A")
-                if choiced == "2":
+                if choiceg == "2":
                     if player.attributes.carisma >= 7:
                         print("A tua personalidade carismática convenceu a Dª Glória e ela deixa-te passar...!")
                     else:
@@ -287,7 +285,7 @@ def cenario_gruta(player):
                                     print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit() 
-                if choiced == "3":
+                if choiceg == "3":
                     if player.attributes.forca >= 7:
                         resultado = random.randint(1, 10)
                         if resultado <= 4:    
@@ -314,5 +312,5 @@ def cenario_gruta(player):
                                     exit() 
 
 def cenario_sombras(player):
-    ewfdrwe
+    exit()
 cenario_floresta(player)
