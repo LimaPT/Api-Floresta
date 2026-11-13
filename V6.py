@@ -302,22 +302,6 @@ def cenario_ruinas(player):
                 tnormal()
             cenario_ruinas(player)
 
-def cenario_sombras(player):
-    print("\nEscolheste as sombras...")
-    if player.player_class == Plebeu:
-        tplebeu()
-    else:
-        tnormal()
-
-def cenario_gruta(player):
-    print("\nEscolheste a gruta...")
-    if player.player_class == Plebeu:
-        tplebeu()
-    else:
-        tnormal()
-
-cenario_floresta(player)
-
 def cenario_gruta(player):
     print("\n--- CAMINHO DA GRUTA ESCURA ---")
     butao=input("Tocas no butão? Sim ou Não").strip().lower()
@@ -433,3 +417,10 @@ def cenario_gruta(player):
                                     print("NÃO Sentes cossegas?? \n \nAGORA TERÁS DE FAZER O VAI E VEM ETERNAMENTE")
                                     print("FIM CURSED")
                                     exit() 
+
+def cenario_sombras(player):
+    print("\nEscolheste as sombras...")
+    if player.player_class == Plebeu:
+        tplebeu()
+    else:
+        tnormal()
