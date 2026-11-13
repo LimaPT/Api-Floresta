@@ -137,7 +137,7 @@ def cenario_ruinas(player):
     match choicer:
         case "1" | "explorar":
             print("Explorando as ruínas...")
-            choicer = input("Escolha uma ação: 1 - Sentar-se a ouvir os sons das floresta, 2 - Deixas-te levar pelo... , 3 - Decides tirar uma selfie\n").strip().lower()
+            choicer = input("Escolha uma ação: 1 - Sentar-se a ouvir os sons das floresta, 2 - Deixas-te levar pelo... , 3 - Decides tirar uma selfie\n>").strip().lower()
             match choicer:
 
                 case "1" | "sentar-se":
@@ -148,7 +148,7 @@ def cenario_ruinas(player):
                 case "2" | "deixar-se levar":
                     print("Deixaste-te levar pelo... \nSOM DA MÚSICA! \nO que ouves?")
                     print("1 - Poker Face: Lady Gaga, 2 - Beleiver: Imagine Dragons, 3 - Sweden: C418 ")
-                    choicem = input("Escolha uma música: ").strip().lower()
+                    choicem = input("Escolha uma música: \n>").strip().lower()
                     match choicem:
                         case "1" | "poker face":
                             if player.attributes.destreza >= 7:
@@ -164,7 +164,7 @@ def cenario_ruinas(player):
                         case "2" | "beleiver":
                             print("Escolheste Beleiver! \nComeças a ouvir e tentas dançar, mas rapidamente lembras-te das aulas de educação física.\n \nNão és o único com essa lembrança... Algo oprime-te e ouves: \nEste é o teu fim... ")
                             print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR NOS LEMBRARES")
-                            choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                            choicec = input("Tens cossegas: SIM ou NÃO?\n>").strip().lower()
                             match choicec:
                                 case "sim"|"s"  :
                                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
@@ -187,7 +187,7 @@ def cenario_ruinas(player):
                     else:
                         print("Quem és tu para tirar uma selfie com TAMANHAS entidades???? \nEles oprimem-te e ouves: \nEste é o teu fim... ")
                         print("Sentes cossegas?? \n")
-                        choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                        choicec = input("Tens cossegas: SIM ou NÃO?\n>").strip().lower()
                         match choicec:
                             case "sim"|"s":
                                 print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
@@ -211,7 +211,7 @@ def cenario_gruta(player):
     print("\nEntras na gruta e vês duas direções possíveis:")
     print("1 - Ouves um BOMDIA!!!, e segues o som da voz")
     print("2 - Vês a Dª Glória e aprecebes-te que precisas de algo...")    
-    option_1 = input("O que decides fazer? ")
+    option_1 = input("O que decides fazer?\n>").strip().lower()
     if option_1 == "1":
         print("BOOOOOOOOOM DIAAAAAAAAAAAAAA!")
         print("Tens que fazer uma reação ácido-redução com a professora de FQ")
@@ -221,7 +221,7 @@ def cenario_gruta(player):
             print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
             print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
             print("Sentes cossegas?? \n")
-            choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+            choicec = input("Tens cossegas: SIM ou NÃO?\n>").strip().lower()
             match choicec:
                 case "sim"|"s":
                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
@@ -238,7 +238,7 @@ def cenario_gruta(player):
             exit()
     else:
         print("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
-        choiced = input("Tens o cartão da escola? SIM OU NÃO?").strip().lower()
+        choiced = input("Tens o cartão da escola? SIM OU NÃO?\n>").strip().lower()
         match choiced == "sim"|"s":
             case True:
                 player.attributes.cartao_escola=True
@@ -277,7 +277,7 @@ def cenario_gruta(player):
                             print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
                             print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
                             print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
-                            choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                            choicec = input("Tens cossegas: SIM ou NÃO?\n>").strip().lower()
                             match choicec:
                                 case "sim"|"s":
                                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
@@ -302,7 +302,7 @@ def cenario_gruta(player):
                             print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
                             print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
                             print("Sentes cossegas?? \n")
-                            choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                            choicec = input("Tens cossegas: SIM ou NÃO?\n> ").strip().lower()
                             match choicec:
                                 case "sim"|"s":
                                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
