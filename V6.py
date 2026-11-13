@@ -259,7 +259,7 @@ def cenario_ruinas(player):
                                     print("FIM MAU")
                                     exit()
                                 case "não":
-                                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o  VAI E VEM Eternamente")
+                                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit()
                         case "3" | "sweden":
@@ -282,7 +282,7 @@ def cenario_ruinas(player):
                                 print("FIM MAU")
                                 exit()
                             case "não"|"n"|"nao":
-                                print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o  VAI E VEM Eternamente")
+                                print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                 print("FIM CURSED")  
                                 exit()       
                 case _:
@@ -332,15 +332,15 @@ def cenario_gruta_caminhos(player):
             if option_1_1 == "1":
                 print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
                 print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
-                print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÂO")
+                print("Sentes cossegas?? \n")
                 choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
                 match choicec:
                     case "sim":
-                        print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
+                        print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                         print("FIM MAU")
                         exit()
                     case "não":
-                        print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o  VAI E VEM Eternamente")
+                        print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                         print("FIM CURSED")
                         exit()  
             else:
@@ -387,15 +387,15 @@ def cenario_gruta_caminhos(player):
                         if option_1_1 == "1":
                             print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
                             print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
-                            print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÂO")
+                            print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                             choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
                             match choicec:
                                 case "sim":
-                                    print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
+                                    print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                                     print("FIM MAU")
                                     exit()
                                 case "não":
-                                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o  VAI E VEM Eternamente")
+                                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit() 
                 if choiced == "3":
@@ -420,7 +420,7 @@ def cenario_gruta_caminhos(player):
                                     print("FIM MAU")
                                     exit()
                                 case "não":
-                                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o  VAI E VEM Eternamente")
+                                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit() 
 
