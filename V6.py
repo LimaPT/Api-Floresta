@@ -15,13 +15,13 @@ class Class:
 
 # Classes de personagem 
 Gadiador = Class(name="Gladiador", 
-            base_attributes=Attributes(forca=7, carisma=4, destreza=3, cartao_escola=False))
+            base_attributes=Attributes (forca=7, carisma=4, destreza=3, cartao_escola=False))
 Gatuno = Class(name="Gatuno", 
-            base_attributes=Attributes(forca=3, carisma=5, destreza=7, cartao_escola=True))
+            base_attributes=Attributes (forca=3, carisma=5, destreza=7, cartao_escola=True))
 Goliardo = Class(name="Goliardo", 
-            base_attributes=Attributes(forca=3, carisma=7, destreza=5, cartao_escola=False))
+            base_attributes=Attributes (forca=3, carisma=7, destreza=5, cartao_escola=False))
 Plebeu = Class(name="Plebeu", 
-            base_attributes=Attributes(forca=1, carisma=1, destreza=1, cartao_escola=False))
+            base_attributes=Attributes (forca=1, carisma=1, destreza=1, cartao_escola=False))
 
 player_classes = {
     "gladiador": Gadiador,
@@ -36,7 +36,7 @@ class Player:
     attributes: Attributes = field(init=False)
 
     def __post_init__(self) -> None:
-        self.attributes = Attributes(
+        self.attributes = Attributes (
             forca=self.player_class.base_attributes.forca,
             destreza=self.player_class.base_attributes.destreza,
             carisma=self.player_class.base_attributes.carisma,
@@ -46,7 +46,7 @@ class Player:
     # Função para alterar a classe do jogador (Necessária para o teu código funcionar)
     def change_class(self, new_class: Class) -> None:
         self.player_class = new_class
-        self.attributes = Attributes(
+        self.attributes = Attributes (
             forca=new_class.base_attributes.forca,
             destreza=new_class.base_attributes.destreza,
             carisma=new_class.base_attributes.carisma,
@@ -169,26 +169,27 @@ def tnormal ():
         case range(98, 100):
             change_class(Plebeu)
             print("Tornas-te Plebeu!")
-
+            
 # Início do jogo
+
 print("Escolha uma classe: Gladiador, Gatuno ou Goliardo")
 escolha = input("> ").strip().lower()
 player_class = player_classes.get(escolha, Plebeu)
 player = Player(name="Jogador", player_class=player_class)
-
-if escolha in player_classes:
-    print(f"Parabéns! Tornaste-te num {player.player_class.name}!!!")
-else:
-    print("\nEscolha inválida... Tornaste-te num PLEBEU!")
 stats_message = (
     "Os teus stats são: "
     f"Força= {player.attributes.forca}, "
     f"Destreza= {player.attributes.destreza}, "
     f"Carisma= {player.attributes.carisma}"
 )
+if escolha in player_classes:
+    print(f"Parabéns! Tornaste-te num {player.player_class.name}!!!")
+else:
+    print("\nEscolha inválida... Tornaste-te num PLEBEU!")
+
 if player.player_class is Gatuno:
     stats_message += " e tens o cartão da escola!"
-print(stats_message)
+    print(stats_message)
 
 # Primeira Opção
 def cenario_floresta(player):
@@ -304,15 +305,20 @@ def cenario_ruinas(player):
 
 def cenario_gruta(player):
     print("\n--- CAMINHO DA GRUTA ESCURA ---")
-    butao=input("Tocas no butão? Sim ou Não").strip().lower()
+    butao=input("Tocas no butão? Sim ou Não\n").strip().lower()
     if butao == "sim":
         if player.player_class == Plebeu:
             tplebeu()
-            print(f"Stats atuais: {player.attributes}")
+            print(stats_message)
+            cenario_gruta_caminhos(player)
         else:
             tnormal()
-            print(f"Stats atuais: {player.attributes}")
+            print(stats_message)
+            cenario_gruta_caminhos(player)
     else:
+        cenario_gruta_caminhos(player)
+
+def cenario_gruta_caminhos(player):
         print("\nEntras na gruta e vês duas direções possíveis:")
         print("1 - Ouves um BOMDIA!!!, e segues o som da voz")
         print("2 - Vês a Dª Glória e aprecebes-te que precisas de algo...")
@@ -346,10 +352,10 @@ def cenario_gruta(player):
             print("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
             choiced = input("Tens o cartão da escola? SIM OU NÃO?").strip().lower()
             if choiced == "sim":
-                player.attributes.cartao_escola:True
+                player.attributes.cartao_escola==True
                 print("Mostraste o cartão da escola e deixaram-te passar...!")
             else:
-                player.attributes.cartao_escola:False
+                player.attributes.cartao_escola==False
                 print("Não tens o cartão da escola, tens que fazer uma reação ácido-redução")
                 print("\nNa oxidação, o número de oxidação aumenta; 1 ou diminui; 2?")
                 option_1_2 = input("\n >")
@@ -361,7 +367,7 @@ def cenario_gruta(player):
                     print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
                     exit()
             if choiced == "não":
-                player.attributes.cartao_escola:False
+                player.attributes.cartao_escola==False
                 print("Não tens o cartão da escola.\n 1- Aceitas o teu destino e vais fazer a reação ácido-redução, 2- Tentas a tua sorte com a tua personalidade carismática, 3- Propões um braço de ferro à Dª Glória")
                 if choiced == "1":
                     print("\nNa oxidação, o número de oxidação aumenta; 1 ou diminui; 2?")
@@ -424,3 +430,5 @@ def cenario_sombras(player):
         tplebeu()
     else:
         tnormal()
+
+cenario_floresta(player)
