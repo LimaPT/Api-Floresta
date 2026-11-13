@@ -86,90 +86,6 @@ def change_atribute(attribute: str, value: bool) -> None:
 def change_class(player_class: Class) -> None:
     player.change_class(player_class)
 
-#Tabelas Random
-def tplebeu ():
-    tabela = random.randint(1, 100)
-    match tabela:
-        case range(1, 5):
-            add_attribute("forca", 1)
-            print("Ganhas +1 Força!")
-        case range(6, 11):
-            add_attribute("destreza", 1)
-            print("Ganhas +1 Destreza!")
-        case range(12, 17):
-            add_attribute("carisma", 1)
-            print("Ganhas +1 Carisma!")
-        case range(18, 24):
-            add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
-            print("Ganhas +3 Random Stat!")
-        case range(25, 36):
-            subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
-            print("Perdes -2 Stat!")
-        case range(37, 44):
-            print("Aparecem os 4 cavaleiros do apocalipse e morres!")
-            exit()
-        case range(45, 56):
-            subtract_attribute("forca", 1)
-            print("Perdes -1 Força!")
-        case range(57, 68):
-            subtract_attribute("carisma", 1)
-            print("Perdes -1 Carisma!")
-        case range(69, 80):
-            subtract_attribute("destreza", 1)
-            print("Perdes -1 Destreza!")
-        case range(81, 88):
-            change_atribute("cartao_escola", True)
-            print("Ganhas o cartão da escola")
-        case range(89, 91):
-            change_class(random.choice([Goliardo, Gatuno, Gadiador]))
-            print("Tornas-te (Goliardo/Gatuno/Gladiador)")
-        case range(92, 100):
-            print("Perdes-te...")
-            exit()
-
-def tnormal ():
-    tabela = random.randint(1, 100)
-    match tabela:
-        case range(1, 7):
-            add_attribute("forca", 1)
-            print("Ganhas +1 Força!")
-        case range(8, 14):
-            add_attribute("destreza", 1)
-            print("Ganhas +1 Destreza!")
-        case range(15, 21):
-            add_attribute("carisma", 1)
-            print("Ganhas +1 Carisma!")
-        case range(22, 28):
-            add_attribute(random.choice(["forca", "destreza", "carisma"]), 3)
-            print("Ganhas +3 Random Stat!")
-        case range(29, 35):
-            subtract_attribute(random.choice(["forca", "destreza", "carisma"]), 2)
-            print("Perdes -2 Stat!")
-        case range(36, 43):
-            print("Aparecem os 4 cavaleiros do apocalipse e morres!")
-            exit()
-        case range(44, 53):
-            subtract_attribute("forca", 1) 
-            print("Perdes -1 Força!")
-        case range(54, 63):
-            subtract_attribute("carisma", 1)
-            print("Perdes -1 Carisma!")
-        case range(64, 73):
-            subtract_attribute("destreza", 1)
-            print("Perdes -1 Destreza!")
-        case range(74, 85):
-            change_attribute("cartao_escola", True)
-            print("Ganhas o cartão da escola")
-        case range(86, 89):
-            change_class(random.choice([Goliardo, Gatuno, Gadiador]))
-            print("Tornas-te (Goliardo/Gatuno/Gladiador)")
-        case range(90, 97):
-            print("Perdes-te...")
-            exit()
-        case range(98, 100):
-            change_class(Plebeu)
-            print("Tornas-te Plebeu!")
-            
 # Início do jogo
 
 print("Escolha uma classe: Gladiador, Gatuno ou Goliardo")
@@ -209,10 +125,6 @@ def cenario_floresta(player):
             cenario_ruinas(player)
         case _:
             print('Opção inválida, tenta novamente.')
-            if player.player_class == Plebeu:
-                tplebeu()
-            else:
-                tnormal()
             cenario_floresta(player)
 
 def cenario_ruinas(player):
@@ -287,75 +199,52 @@ def cenario_ruinas(player):
                                 exit()       
                 case _:
                     print('Opção inválida, tenta novamente.')
-                    if player.player_class == Plebeu:
-                        tplebeu()
-                    else:
-                        tnormal()
                     cenario_ruinas(player)
 
         case "2" | "voltar":
             cenario_floresta(player)
         case _:
             print('Opção inválida, tenta novamente.')
-            if player.player_class == Plebeu:
-                tplebeu()
-            else:
-                tnormal()
-            cenario_ruinas(player)
 
 def cenario_gruta(player):
     print("\n--- CAMINHO DA GRUTA ESCURA ---")
-    butao=input("Tocas no butão? Sim ou Não\n").strip().lower()
-    if butao == "sim"|"s":
-        if player.player_class == Plebeu:
-            tplebeu()
-            print(stats_message)
-            cenario_gruta_caminhos(player)
+    print("\nEntras na gruta e vês duas direções possíveis:")
+    print("1 - Ouves um BOMDIA!!!, e segues o som da voz")
+    print("2 - Vês a Dª Glória e aprecebes-te que precisas de algo...")    
+    option_1 = input("O que decides fazer? ")
+    if option_1 == "1":
+        print("BOOOOOOOOOM DIAAAAAAAAAAAAAA!")
+        print("Tens que fazer uma reação ácido-redução com a professora de FQ")
+        print("\nNa oxidação, o número de oxidação aumenta:1 , ou diminui:2 ?")
+        option_1_1 = input("\n >") 
+        if option_1_1 == "1":
+            print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+            print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+            print("Sentes cossegas?? \n")
+            choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
+            match choicec:
+                case "sim"|"s":
+                    print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                    print("FIM MAU")
+                    exit()
+                case "não"|"n"|"nao":
+                    print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
+                    print("FIM CURSED")
+                    exit()  
         else:
-            tnormal()
-            print(stats_message)
-            cenario_gruta_caminhos(player)
+            print("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+            print("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+            print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+            exit()
     else:
-        cenario_gruta_caminhos(player)
-
-def cenario_gruta_caminhos(player):
-        print("\nEntras na gruta e vês duas direções possíveis:")
-        print("1 - Ouves um BOMDIA!!!, e segues o som da voz")
-        print("2 - Vês a Dª Glória e aprecebes-te que precisas de algo...")
-        
-        option_1 = input("O que decides fazer? ")
-        if option_1 == "1":
-            print("BOOOOOOOOOM DIAAAAAAAAAAAAAA!")
-            print("Tens que fazer uma reação ácido-redução com a professora de FQ")
-            print("\nNa oxidação, o número de oxidação aumenta:1 , ou diminui:2 ?")
-            option_1_1 = input("\n >") 
-            if option_1_1 == "1":
-                print("Erraste, foste enviado para as ruínas, para seres exorcidado...")
-                print("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
-                print("Sentes cossegas?? \n")
-                choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
-                match choicec:
-                    case "sim"|"s":
-                        print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
-                        print("FIM MAU")
-                        exit()
-                    case "não"|"n"|"nao":
-                        print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
-                        print("FIM CURSED")
-                        exit()  
-            else:
-                print("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
-                print("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
-                print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
-                exit()
-        else:
-            print("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
-            choiced = input("Tens o cartão da escola? SIM OU NÃO?").strip().lower()
-            if choiced == "sim"|"s":
-                player.attributes.cartao_escola==True
+        print("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
+        choiced = input("Tens o cartão da escola? SIM OU NÃO?").strip().lower()
+        match choiced == "sim"|"s":
+            case True:
+                player.attributes.cartao_escola=True
                 print("Mostraste o cartão da escola e deixaram-te passar...!")
-            else:
-                player.attributes.cartao_escola==False
+            case False:
+                player.attributes.cartao_escola=False
                 print("Não tens o cartão da escola, tens que fazer uma reação ácido-redução")
                 print("\nNa oxidação, o número de oxidação aumenta; 1 ou diminui; 2?")
                 option_1_2 = input("\n >")
@@ -366,8 +255,8 @@ def cenario_gruta_caminhos(player):
                     print("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
                     print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
                     exit()
-            if choiced == "não"|"n"|"nao":
-                player.attributes.cartao_escola==False
+        if choiced == "não"or"n"or"nao":
+                player.attributes.cartao_escola=False
                 print("Não tens o cartão da escola.\n 1- Aceitas o teu destino e vais fazer a reação ácido-redução, 2- Tentas a tua sorte com a tua personalidade carismática, 3- Propões um braço de ferro à Dª Glória")
                 if choiced == "1":
                     print("\nNa oxidação, o número de oxidação aumenta; 1 ou diminui; 2?")
@@ -425,10 +314,5 @@ def cenario_gruta_caminhos(player):
                                     exit() 
 
 def cenario_sombras(player):
-    print("\nEscolheste as sombras...")
-    if player.player_class == Plebeu:
-        tplebeu()
-    else:
-        tnormal()
-
+    ewfdrwe
 cenario_floresta(player)
