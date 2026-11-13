@@ -254,11 +254,11 @@ def cenario_ruinas(player):
                             print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR NOS LEMBRARES")
                             choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
                             match choicec:
-                                case "sim":
+                                case "sim"|"s"  :
                                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO")
                                     print("FIM MAU")
                                     exit()
-                                case "não":
+                                case "não"|"n"|"nao":
                                     print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit()
@@ -306,7 +306,7 @@ def cenario_ruinas(player):
 def cenario_gruta(player):
     print("\n--- CAMINHO DA GRUTA ESCURA ---")
     butao=input("Tocas no butão? Sim ou Não\n").strip().lower()
-    if butao == "sim":
+    if butao == "sim"|"s":
         if player.player_class == Plebeu:
             tplebeu()
             print(stats_message)
@@ -335,11 +335,11 @@ def cenario_gruta_caminhos(player):
                 print("Sentes cossegas?? \n")
                 choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
                 match choicec:
-                    case "sim":
+                    case "sim"|"s":
                         print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                         print("FIM MAU")
                         exit()
-                    case "não":
+                    case "não"|"n"|"nao":
                         print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                         print("FIM CURSED")
                         exit()  
@@ -351,7 +351,7 @@ def cenario_gruta_caminhos(player):
         else:
             print("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
             choiced = input("Tens o cartão da escola? SIM OU NÃO?").strip().lower()
-            if choiced == "sim":
+            if choiced == "sim"|"s":
                 player.attributes.cartao_escola==True
                 print("Mostraste o cartão da escola e deixaram-te passar...!")
             else:
@@ -366,7 +366,7 @@ def cenario_gruta_caminhos(player):
                     print("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
                     print("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
                     exit()
-            if choiced == "não":
+            if choiced == "não"|"n"|"nao":
                 player.attributes.cartao_escola==False
                 print("Não tens o cartão da escola.\n 1- Aceitas o teu destino e vais fazer a reação ácido-redução, 2- Tentas a tua sorte com a tua personalidade carismática, 3- Propões um braço de ferro à Dª Glória")
                 if choiced == "1":
@@ -390,11 +390,11 @@ def cenario_gruta_caminhos(player):
                             print("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                             choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
                             match choicec:
-                                case "sim":
+                                case "sim"|"s":
                                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                                     print("FIM MAU")
                                     exit()
-                                case "não":
+                                case "não"|"n"|"nao":
                                     print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit() 
@@ -415,11 +415,11 @@ def cenario_gruta_caminhos(player):
                             print("Sentes cossegas?? \n")
                             choicec = input("Tens cossegas: SIM ou NÃO? ").strip().lower()
                             match choicec:
-                                case "sim":
+                                case "sim"|"s":
                                     print("Sentirás cossegas por 100 anos... \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
                                     print("FIM MAU")
                                     exit()
-                                case "não":
+                                case "não"|"n"|"nao":
                                     print("NÃO Sentes cossegas?? \n \nAgora terás de fazer o VAI E VEM Eternamente")
                                     print("FIM CURSED")
                                     exit() 
