@@ -313,4 +313,243 @@ def cenario_gruta(player):
 
 def cenario_sombras(player):
     exit()
+
+
+def cenario_gruta(player):
+    printBonito("\n--- CAMINHO DA GRUTA ESCURA ---")
+    printBonito("\nEntras na gruta e vês duas direções possíveis:")
+    printBonito("1 - Ouves um BOMDIA!!!, e segues o som da voz")
+    printBonito("2 - Vês a Dª Glória e aprecebes-te que precisas de algo...")
+        
+    option_1 = inputBonito("O que decides fazer? ").strip().lower()
+    if option_1 == "1":
+            printBonito("BOOOOOOOOOM DIAAAAAAAAAAAAAA!")
+            printBonito("Tens que fazer uma reação ácido-redução com a professora de FQ")
+            printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+            option_1_1 = inputBonito("\n> ") 
+            if option_1_1 == "2":
+                printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                printBonito("Sentes cossegas?? \n")
+                choicec = inputBonito("Tens cossegas: SIM ou NÃO? ").strip().lower()
+                if choicec in {"sim", "s"}:
+                    printBonito("Sentirás cócegas por 100 anos...")
+                    printBonito("FIM MAU")
+                    exit()
+                elif choicec in {"não", "nao", "n"}:
+                    printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                    printBonito("FIM CURSED")
+                    exit()
+                else:
+                    printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                    cenario_gruta(player)
+            else:
+                printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                exit()
+    elif option_1 == "2":
+        printBonito("Ao chegares à Dª Glória, ela pergunta-te se tens o cartão da escola...")
+        choiced = inputBonito("Tens o cartão da escola? SIM OU NÃO? ").strip().lower()
+            if choiced in {"sim", "s"} and player.attributes.cartao_escola:
+                printBonito("Mostraste o cartão da escola e deixaram-te passar...!")
+                cenario_sombras(player)
+            elif choiced in {"não", "nao", "n"}:
+                player.attributes.cartao_escola = False
+                printBonito("Não tens o cartão da escola.")
+                acao = inputBonito(
+                    "1 - Fazer a reação de oxidação-redução, "
+                    "2 - Usar carisma, "
+                    "3 - Propor um braço de ferro\n> "
+                ).strip()
+                if acao == "1":
+                    printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+                    option_1_1 = inputBonito("\n> ")
+                    if option_1_1 == "1":
+                        printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                        printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                        printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                        exit() 
+                    else:
+                        printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                        printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                        printBonito("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                        choicec = inputBonito("Tens cócegas: SIM ou NÃO? ").strip().lower()
+                        if choicec in {"sim", "s"}:
+                            printBonito("Sentirás cócegas por 100 anos...")
+                            printBonito("FIM MAU")
+                            exit()
+                        elif choicec in {"não", "nao", "n"}:
+                            printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                            printBonito("FIM CURSED")
+                            exit()
+                        else:
+                            printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                            cenario_gruta(player)
+                elif acao == "2":
+                    if player.attributes.carisma >= 7:
+                        printBonito("A tua personalidade carismática convenceu a Dª Glória e ela deixa-te passar...!")
+                        cenario_sombras(player)
+                    else:
+                        printBonito("A tua personalidade NÃO carismática, não convenceu a Dª Glória e foste enviado para o BOOOOOMMMMM DIAAAAAA!")
+                        printBonito("Tens que fazer uma reação ácido-redução com a professora de FQ")
+                        printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+                        option_1_1 = inputBonito("\n> ")
+                        if option_1_1 == "1":
+                            printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                            printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                            printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                            exit() 
+                        else:
+                            printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                            printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                            printBonito("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                            choicec = inputBonito("Tens cócegas: SIM ou NÃO? ").strip().lower()
+                            if choicec in {"sim", "s"}:
+                                printBonito("Sentirás cócegas por 100 anos...")
+                                printBonito("FIM MAU")
+                                exit()
+                            elif choicec in {"não", "nao", "n"}:
+                                printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                                printBonito("FIM CURSED")
+                                exit()
+                            else:
+                                printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                                cenario_gruta(player)
+                elif acao == "3":
+                    if player.attributes.forca >= 7:
+                        resultado = random.randint(1, 10)
+                        if resultado <= 4:    
+                            printBonito("A tua força física convenceu a Dª Glória e ela deixa-te passar...!")
+                            cenario_sombras(player)
+                        else:
+                            printBonito("A tua força física NÃO convenceu a Dª Glória e foste enviado para o BOOOOOMMMMM DIAAAAAA!")
+                            printBonito("Tens que fazer uma reação ácido-redução com a professora de FQ")
+                            printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+                            option_1_1 = inputBonito("\n> ")
+                            if option_1_1 == "1":
+                                printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                                printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                                printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                                exit() 
+                            else:
+                                printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                                printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                                printBonito("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                                choicec = inputBonito("Tens cócegas: SIM ou NÃO? ").strip().lower()
+                                if choicec in {"sim", "s"}:
+                                    printBonito("Sentirás cócegas por 100 anos...")
+                                    printBonito("FIM MAU")
+                                    exit()
+                                elif choicec in {"não", "nao", "n"}:
+                                    printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                                    printBonito("FIM CURSED")
+                                    exit()
+                                else:
+                                    printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                                    cenario_gruta(player)
+        else:
+            player.attributes.cartao_escola==False
+            printBonito("Não tens o cartão da escola, tens que fazer uma reação ácido-redução")
+            printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+            option_1_2 = inputBonito("\n> ")
+            if option_1_2 == "1":
+                printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                exit()
+            else:
+                printBonito:("Erraste, foste enviado para as ruínas, e és consumindo pelos espirito")
+        if choiced == "não or n or nao":
+            player.attributes.cartao_escola==False
+            printBonito("Não tens o cartão da escola.\n 1- Aceitas o teu destino e vais fazer a reação ácido-redução, 2- Tentas a tua sorte com a tua personalidade carismática, 3- Propões um braço de ferro à Dª Glória")
+            if choiced == "1":
+                printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+                option_1_1 = inputBonito("\n> ")
+                if option_1_1 == "1":
+                    printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                    printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                    printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                    exit() 
+                else:
+                    printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                    printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                    printBonito("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                    choicec = inputBonito("Tens cócegas: SIM ou NÃO? ").strip().lower()
+                    if choicec in {"sim", "s"}:
+                        printBonito("Sentirás cócegas por 100 anos...")
+                        printBonito("FIM MAU")
+                        exit()
+                    elif choicec in {"não", "nao", "n"}:
+                        printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                        printBonito("FIM CURSED")
+                        exit()
+                    else:
+                        printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                        cenario_gruta(player)
+            if choiced == "2":
+                if player.attributes.carisma >= 7:
+                    printBonito("A tua personalidade carismática convenceu a Dª Glória e ela deixa-te passar...!")
+                else:
+                    printBonito("A tua personalidade NÃO carismática, não convenceu a Dª Glória e foste enviado para o BOOOOOMMMMM DIAAAAAA!")
+                    printBonito("Tens que fazer uma reação ácido-redução com a professora de FQ")
+                    printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+                    option_1_1 = inputBonito("\n> ")
+                    if option_1_1 == "1":
+                        printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                        printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                        printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                        exit() 
+                    else:
+                        printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                        printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                        printBonito("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                        choicec = inputBonito("Tens cócegas: SIM ou NÃO? ").strip().lower()
+                        if choicec in {"sim", "s"}:
+                            printBonito("Sentirás cócegas por 100 anos...")
+                            printBonito("FIM MAU")
+                            exit()
+                        elif choicec in {"não", "nao", "n"}:
+                            printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                            printBonito("FIM CURSED")
+                            exit()
+                        else:
+                            printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                            cenario_gruta(player)
+            if choiced == "3":
+                if player.attributes.forca >= 7:
+                    resultado = random.randint(1, 10)
+                    if resultado <= 4:    
+                            printBonito("A tua força física convenceu a Dª Glória e ela deixa-te passar...!")
+                            cenario_sombras(player)
+                    else:
+                        printBonito("A tua força física NÃO convenceu a Dª Glória e foste enviado para o BOOOOOMMMMM DIAAAAAA!")
+                        printBonito("Tens que fazer uma reação ácido-redução com a professora de FQ")
+                        printBonito("\nNa oxidação, o número de oxidação Aumenta - 1 ou Diminui - 2 ?")
+                        option_1_1 = inputBonito("\n> ")
+                        if option_1_1 == "1":
+                            printBonito("Acertaste e escapaste da gruta com média de 15.4321/20 em Física e Quimica A!")
+                            printBonito("Algo agradece o teu esforço e leva-te a pela floresta até...\n")
+                            printBonito("Um BURGERKING! \nParece que a floresta chegou ao fim e agora o Rei dos hamburgers oferece-te um whopper.\n \nFIM BOM")
+                            exit() 
+                        else:
+                            printBonito("Erraste, foste enviado para as ruínas, para seres exorcidado...")
+                            printBonito("Sentes várias sensações estranhas e ouves vozes macabras... \n \nEste é o teu fim... ")
+                            printBonito("Sentes cossegas?? \n \nESTE É O TEU CASTIGO POR FALHARES A TUA ÚNICA OBRIGAÇÃO")
+                            choicec = inputBonito("Tens cócegas: SIM ou NÃO? ").strip().lower()
+                            if choicec in {"sim", "s"}:
+                                printBonito("Sentirás cócegas por 100 anos...")
+                                printBonito("FIM MAU")
+                                exit()
+                            elif choicec in {"não", "nao", "n"}:
+                                printBonito("Agora terás de fazer o VAI E VEM eternamente")
+                                printBonito("FIM CURSED")
+                                exit()
+                            else:
+                                printBonito("Resposta inválida. Responde SIM ou NÃO.")
+                                cenario_gruta(player)
+
+    else:
+        printBonito("Opção inválida, tenta novamente.")
+        cenario_gruta(player)
 cenario_floresta(player)
